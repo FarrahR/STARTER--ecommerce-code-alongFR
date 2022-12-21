@@ -68,7 +68,7 @@ button {
 }
 
 a {
-    &.button{
+    &.button {
         color: $primary;
         background-color: transparent;
         padding: 18px 36px;
@@ -78,13 +78,37 @@ a {
         line-height: 1.2rem;
         text-align: center;
         transition: 0.3s;
-        &:hover{
+
+        &:hover {
             background-color: $primary;
             color: $solidWhite;
         }
-        &:focus{
+
+        &:focus {
             background-color: $primary;
             color: $solidWhite;
+        }
+    }
+
+    // Styles for anchors with "solid" class
+    &.solid {
+        color: $solidWhite;
+        background-color: $primary;
+        padding: 18px 36px;
+        border: 2px solid $primary;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+
+        &:hover {
+            color: $primary;
+            background-color: $solidWhite;
+        }
+
+        &:focus {
+            color: $primary;
+            background-color: $solidWhite;
         }
     }
 }
